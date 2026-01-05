@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="landing-page.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
+ 
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
+
+</head>
+<body>
+     <header class="sticky-bg">
+      <nav>
+        <div class="nav-links">
+          <i class="fa fa-bars" onclick="toggleMenu()"></i>
+          <a href="#hero-section" class="hero-link">Milk-Village</a>
+
+          <div id="nav-links-sub">
+            <ul>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#our-products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+     <section id="hero-section">
+      <div class="hero-title">
+        <div class="hero-sub-container-one">
+          <span id="title-one">SIP</span>
+        </div>
+        <div class="hero-sub-container-two">
+          <img
+            src="./img/hero-img-removebg-preview.png"
+            id="orange-slice-1"
+            class="rotate"
+            alt=""
+          />
+          <img
+            src="./img/hero-img-removebg-preview.png"
+            id="orange-slice-2"
+            class="rotate"
+            alt=""
+          />
+          <span id="title-two">FRESH</span>
+        </div>
+      </div>
+    </section>
+
+    <hr>  <hr> 
+
+    <section id="about-us">
+      <div class="about-us-container">
+        <div class="about-us-row reveal">
+          <div class="about-us-col">
+            <h3>About Us
+</h3>
+            <p>
+             We believe great milk products begin with purity and care. Our milk is sourced from trusted farms, processed with modern hygiene standards, and delivered fresh to your doorstep. From everyday milk to delicious milk-based products, we focus on quality you can taste and nutrition you can trust.
+            </p>
+          </div>
+          <div class="about-us-col">
+            <h3>Fresh & Pure</h3>
+            <p>
+             Our dairy products are made fresh every day using high-quality milk. We avoid unnecessary additives and preserve the natural goodness, ensuring every sip is rich, creamy, and full of nutrition.
+            </p>
+          </div>
+          <div class="about-us-col">
+            <h3>A Call Away</h3>
+            <p>
+             Have questions or need assistance? We’re always here to help. Just a call away for orders, support, or any information about our products. Your satisfaction is our priority.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>  <hr> 
+
+    <section id="our-products">
+  <div class="products-grid-wrapper reveal">
+    <div class="products-grid-container">
+      <div class="grid-item">
+        <img src="./img/product-removebg-preview.png" alt="" />
+        <p>Milk A</p>
+      </div>
+      <div class="grid-item">
+        <img src="./img/product-removebg-preview.png" alt="" />
+        <p>Milk B</p>
+      </div>
+      <div class="grid-item">
+        <img src="./img/product-removebg-preview.png" alt="" />
+        <p>Milk C</p>
+      </div>
+      <div class="grid-item">
+       <img src="./img/product-removebg-preview.png" alt="" />
+        <p>Milk D</p>
+      </div>
+      <div class="grid-item">
+        <img src="./img/product-removebg-preview.png" alt="" />
+        <p>Milk E</p>
+      </div>
+      <div class="grid-item">
+       <img src="./img/product-removebg-preview.png" alt="" />
+        <p>Milk F</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <hr>  <hr>
+
+
+<section id="contact">
+      <div class="contact-row reveal">
+        <div class="contact-col">
+          <div class="testimonial-wrapper">
+            <p>
+              One of the best milk products I’ve ever had. Fresh, creamy, and absolutely delicious — a part of my everyday life.
+            </p>
+            <br />
+            <p><b>Kapil Yadav</b><br> 
+Founder & Managing Director :)</p>
+          </div>
+        </div>
+        <div class="contact-col">
+          <div class="social-icon-wrapper">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./img/instagram.png" alt=""
+            /></a>
+            <a href="#contact"
+              ><img src="./img/facebook.png" alt=""
+            /></a>
+            <a href="#contact"
+              ><img src="./img/twitter.png" alt=""
+            /></a>
+            <a href="#contact"><img src="./img/mail.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>  <hr> 
+
+    <section id="footer-section">
+  <div class="footer-row">
+    <p>Copyright &copy; Milk-Village 2026</p>
+    <div class="footer-nav-links">
+      <ul>
+        <li><a href="#hero-section">Milk-Village</a></li>
+        <li><a href="#about-us">about</a></li>
+        <li><a href="#our-products">products</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <script>
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+let titleOne = document.getElementById("title-one");
+let titleTwo = document.getElementById("title-two");
+
+window.addEventListener("scroll", function () {
+  let value = window.scrollY;
+
+  titleOne.style.right = value * 0.5 + "px";
+  titleTwo.style.left = value * 0.5 + "px";
+});
+
+function toggleMenu() {
+  var x = document.getElementById("nav-links-sub");
+  if (x.style.left != "0px") {
+    x.style.left = "0px";
+    document.body.style.overflowY = "hidden";
+  } else {
+    x.style.left = "-200px";
+    document.body.style.overflowY = "visible";
+  }
+}
+    </script>
+</body>
+</html>
